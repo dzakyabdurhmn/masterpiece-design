@@ -1,6 +1,8 @@
 import AuthForm from "./auth-form";
 import './page.css'
 
+// Landing Page
+
 export default function Home() {
   return (
     <div className="row">
