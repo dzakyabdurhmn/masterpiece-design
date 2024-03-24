@@ -1,25 +1,51 @@
 .description {
-    color: rgb(218, 218, 218);
+  color: rgb(218, 218, 218);
 }
 
 .text-sm {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .text-md {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .text-lg {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .text-xl {
-    font-size: 45px;
+  font-size: 40px;
 }
-
 
 .row {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
+
+/* manual css */
+/* capek anjirrr */
+.Header-navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.list-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.login-button, .github-button-link, .documentation-link {
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  font-size: 15px;
+}
+
+.login-button:hover, .github-button-link:hover, .documentation-link:hover {
+   scale: 0.95;
+   transition: all .2s ease-in-out;
+  }
