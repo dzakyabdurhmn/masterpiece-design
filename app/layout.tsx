@@ -1,4 +1,5 @@
 import "./globals.css";
+import FooterSection from "./section/Footer";
 
 export const metadata = {
   title: "User Management",
@@ -9,7 +10,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <body>
+        <script src="https://cdn.tailwindcss.com"></script>
         <div className="container">{children}</div>
+        <FooterSection />
       </body>
     </html>
   );
