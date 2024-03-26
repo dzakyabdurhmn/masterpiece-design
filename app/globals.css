@@ -32,7 +32,7 @@ body,
   overflow-x: hidden;
 }
 
-/* Grid */
+
 
 .container {
   width: 90%;
@@ -108,14 +108,14 @@ body,
 }
 
 @media only screen and (min-width: 33.75em) {
-  /* 540px */
+
   .container {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 45em) {
-  /* 720px */
+
   .col-1 {
     width: 4.33%;
   }
@@ -158,14 +158,13 @@ body,
 }
 
 @media only screen and (min-width: 60em) {
-  /* 960px */
   .container {
     width: 75%;
     max-width: 60rem;
   }
 }
 
-/* Forms */
+
 
 label {
   display: block;
@@ -189,7 +188,7 @@ input[disabled] {
   color: var(--custom-color-secondary);
 }
 
-/* Utils */
+
 
 .block {
   display: block;
@@ -234,7 +233,7 @@ input[disabled] {
   opacity: 50%;
 }
 
-/* Button */
+
 
 button,
 .button {
@@ -257,7 +256,7 @@ button.primary,
   border: 1px solid var(--custom-color-brand);
 }
 
-/* Widgets */
+
 
 .card {
   width: 100%;
@@ -310,7 +309,6 @@ button.primary,
 }
 
 @media only screen and (min-width: 60em) {
-  /* 960px */
   .footer > div:first-child {
     display: flex;
   }
