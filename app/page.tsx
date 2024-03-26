@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       {/* start for landing */}
-      <div className="Header-navbar mt-10">
+      <div className="Header-navbar flex justify-between items-center mt-10">
         <h3 className="text-3xl font-semibold">Whatever</h3>
-        <ul className="list-nav-link">
+        <ul className="list-nav-link flex text-sm items-center gap-5">
           <a className="login-button" href="#authForm">
             Login for See Design
           </a>
