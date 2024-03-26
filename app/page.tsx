@@ -4,6 +4,9 @@ import AuthForm from "./auth-form";
 import { HeroText } from "./components/Hero/MainHero";
 import { DeskHeroText } from "./components/Hero/MainHero";
 
+// import Routes
+import LinkApp from './Routes/Link_app'
+
 // import CSS
 import "./page.css";
 import "./section/style/Hero.css";
@@ -28,16 +31,12 @@ export default function Home() {
       </div>
 
       {/* hero section */}
-      <div className="mt-20">
+      <div className="mt-20 flex items-start justify-between">
         <div>
           <div className="text-gray-200 text-7xl text-start Archivo font-semibold">{HeroText}</div>
           <p className="text-sm mt-1 w-[360px] leading-7">{DeskHeroText}</p>
         </div>
-        <div className="flex items-center">
-          <div className="for-instagram-icons"></div>
-          <div className="for-behance-icons"></div>
-          <div className="for-pinterest-icons"></div>
-        </div>
+        <LinkApp/>
       </div>
 
       <div className="flex items-center mt-20 justify-between">
