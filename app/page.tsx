@@ -1,5 +1,5 @@
 import AuthForm from "./auth-form";
-import About from "./section/About";
+import About from './section/About.jsx'
 
 // for add data lib string //
 import { HeroText } from "./components/Hero/MainHero";
@@ -39,12 +39,12 @@ export default function Home() {
             </a>
             <div className="mt-6">
               <a className="text-sm text-gray-200 hover:text-[13px] duration-300 hover:underline Archivo" href="#">
-                support us with a your subsribe
+                Support us with a your Subsribe :D
               </a>
             </div>
           </div>
         </div>
-        <div className="mt-20 flex items-center justify-between">
+        <div className="mt-20 flex mb-5 items-center justify-between">
           <div className="flex text-base text-gray-200 justify-center gap-3 items-center">
             <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
               About
@@ -76,7 +76,7 @@ export default function Home() {
           <h3 className="py-2 w-40 text-center bg-[#101010] Archivo text-gray-200 text-xl font-semibold rounded-xl">About</h3>
         </div>
         <div className="mt-20">
-          <About />
+          <About/>
         </div>
       </div>
 

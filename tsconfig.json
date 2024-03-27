@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/section/Hooks/SlideCarouse.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/section/Hooks/SlideCarouse.tsx", "app/section/About.jsx"],
   "exclude": ["node_modules"]
 }
