@@ -2,7 +2,7 @@ function NavLink_app() {
   return (
     <>
       <div>
-        <ul className="list-nav-link flex text-sm items-center gap-5">
+        <ul className="list-nav-link flex text-sm font-normal items-center gap-8">
           <a className="login-button text-gray-300 hover:text-white transition-all duration-200" href="#authForm">
             Login for See Design
           </a>
