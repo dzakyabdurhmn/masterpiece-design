@@ -28,6 +28,7 @@ html,
 body,
 #__next {
   height: 100vh;
+  scroll-behavior: smooth;
   width: 100vw;
   overflow-x: hidden;
 }

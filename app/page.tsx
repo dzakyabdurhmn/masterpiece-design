@@ -1,5 +1,9 @@
 import AuthForm from "./auth-form";
-import About from './section/About.jsx'
+import About from "./section/About.jsx";
+import Navbar from "./components/NavHeader/Navbar";
+import Technology from "./section/Technology";
+import Connection from "./section/Connection";
+import Working from "./section/Working";
 
 // for add data lib string //
 import { HeroText } from "./components/Hero/MainHero";
@@ -24,39 +28,20 @@ export default function Home() {
           Whatever
         </h3>
         <div data-aos="zoom-in" data-aos-delay="200">
-        <div className="flex text-base text-gray-200 justify-center gap-3 items-center">
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              About
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Services
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Support
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Guestbook
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Technology
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Contact
-            </a>
-          </div>
+          <Navbar />
         </div>
       </div>
 
       {/* hero section */}
-      <div className="p-14 mt-20 border rounded-xl">
+      <div className="p-14 pb-6 mt-20 border rounded-xl">
         <div className="items-start">
           <div className="text-center ">
             <div className="text-gray-200 text-8xl Archivo font-semibold">{HeroText}</div>
             <p className=" mt-4 col-7 Archivo mx-auto text-gray-300 leading-8">{DeskHeroText}</p>
-            <a href="#">
-              <button className="py-2 Archivo w-[250px] rounded-full text-center font-medium mt-6 bg-[#3fcf8e] hover:bg-[#34b27b] hover:scale-95 duration-100">Get Design</button>
+            <a href="#authForm">
+              <button className="py-2 Archivo w-[250px] rounded-lg text-center font-medium mt-6 bg-[#3fcf8e] hover:bg-[#34b27b] hover:scale-95 duration-100">Get Design</button>
             </a>
-            <div className="mt-6">
+            <div className="mt-8 flex justify-center">
               <a className="text-sm text-gray-200 hover:text-[13px] duration-300 hover:underline Archivo" href="#">
                 Support us with a your Subsribe :D
               </a>
@@ -64,20 +49,30 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-20 flex mb-5 items-center justify-between">
-        <NavLink />
+          <NavLink />
           {/* link route to Social Content */}
           <LinkApp />
         </div>
       </div>
 
       {/* about section */}
-      <div className="about-section -mt-6">
+      <div id="About" className="about-section mb-20 -mt-6">
         <div className="flex justify-center">
           <h3 className="py-2 w-40 text-center bg-[#101010] Archivo text-gray-200 text-xl font-semibold rounded-xl">About</h3>
         </div>
         <div className="mt-20">
-          <About/>
+          <About />
         </div>
+      </div>
+
+      <section className="Technology">
+        <div className="mb-20">
+          <Technology />
+        </div>
+      </section>
+
+      <div>
+        <Working />
       </div>
 
       {/* for auth Forms */}
