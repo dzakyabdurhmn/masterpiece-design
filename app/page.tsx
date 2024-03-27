@@ -24,7 +24,26 @@ export default function Home() {
           Whatever
         </h3>
         <div data-aos="zoom-in" data-aos-delay="200">
-          <NavLink />
+        <div className="flex text-base text-gray-200 justify-center gap-3 items-center">
+            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
+              About
+            </a>
+            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
+              Services
+            </a>
+            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
+              Support
+            </a>
+            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
+              Guestbook
+            </a>
+            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
+              Technology
+            </a>
+            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
+              Contact
+            </a>
+          </div>
         </div>
       </div>
 
@@ -45,26 +64,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-20 flex mb-5 items-center justify-between">
-          <div className="flex text-base text-gray-200 justify-center gap-3 items-center">
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              About
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Services
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Support
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Guestbook
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Technology
-            </a>
-            <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#">
-              Contact
-            </a>
-          </div>
+        <NavLink />
           {/* link route to Social Content */}
           <LinkApp />
         </div>
