@@ -23,11 +23,12 @@ export default function Home() {
   return (
     <>
       {/* start for landing */}
-      <div className="Header-navbar flex justify-between items-center mt-10">
-        <h3 data-aos="zoom-in" className="text-2xl Archivo font-semibold">
-          Whatever
-        </h3>
-        <div data-aos="zoom-in" data-aos-delay="200">
+
+      <div className="flex items-center justify-between mt-5" data-aos="zoom-in" data-aos-delay="200">
+        <div>
+          <h3 className="text-2xl tracking-tight font-semibold">Whatever</h3>
+        </div>
+        <div>
           <Navbar />
         </div>
       </div>
@@ -71,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div>
+      <div className="how-t-work">
         <Working />
       </div>
 

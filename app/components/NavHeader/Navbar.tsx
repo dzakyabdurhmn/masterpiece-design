@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <div className="flex text-base text-gray-200 justify-center gap-3 items-center">
+      <div className="flex text-sm text-gray-200 justify-center gap-3 items-center">
         <a className="py-2 Archivo px-4 transition-all rounded-full duration-300 hover:bg-[#3fcf8e] hover:text-white" href="#About">
           About
         </a>
