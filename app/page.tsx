@@ -24,11 +24,11 @@ export default function Home() {
     <>
       {/* start for landing */}
 
-      <div className="flex items-center justify-between mt-5" data-aos="zoom-in" data-aos-delay="200">
+      <div className="flex justify-center items-center md:justify-center lg:justify-between xl:justify-between mt-5" data-aos="zoom-in" data-aos-delay="200">
         <div>
           <h3 className="text-2xl tracking-tight font-semibold">Whatever</h3>
         </div>
-        <div>
+        <div className="hidden md:block md:mt-3 lg:block xl:block">
           <Navbar />
         </div>
       </div>
@@ -37,8 +37,8 @@ export default function Home() {
       <div className="p-14 pb-6 mt-20 border rounded-xl">
         <div className="items-start">
           <div className="text-center ">
-            <div className="text-gray-200 text-8xl Archivo font-semibold">{HeroText}</div>
-            <p className=" mt-4 col-7 Archivo mx-auto text-gray-300 leading-8">{DeskHeroText}</p>
+            <div className="text-gray-200 text-5xl md:text-5xl xl:text-8xl Archivo font-semibold">{HeroText}</div>
+            <p className=" mt-4 col-7 hidden lg:block xl:block text-sm xl:text-base Archivo mx-auto text-gray-300 xl:leading-8">{DeskHeroText}</p>
             <a href="#authForm">
               <button className="py-2 Archivo w-[250px] rounded-lg text-center font-medium mt-6 bg-[#3fcf8e] hover:bg-[#34b27b] hover:scale-95 duration-100">Get Design</button>
             </a>
@@ -49,8 +49,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-20 flex mb-5 items-center justify-between">
-          <NavLink />
+        <div className="xl:mt-20 grid justify-center md:justify-between md:flex lg:flex xl:flex mb-5 items-center xl:justify-between">
+          <div className="hidden md:hidden lg:block xl:block">
+            <NavLink />
+          </div>
           {/* link route to Social Content */}
           <LinkApp />
         </div>
@@ -77,7 +79,7 @@ export default function Home() {
       </div>
 
       {/* for auth Forms */}
-      <div className="flex items-center mt-10 mb-24 justify-between">
+      <div className="grid md:gird lg:flex xl:flex items-center mt-10 mb-24 justify-between">
         <div className="col-6">
           <h1 className="header text-2xl font-medium">{Welcome}</h1>
           <p className="description mt-3 Archivo text-sm leading-7">{WelcomeDesk}</p>
