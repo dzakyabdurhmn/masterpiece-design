@@ -1,23 +1,24 @@
 import AuthForm from "./auth-form";
-import About from "./section/About";
-import Navbar from "./components/NavHeader/Navbar";
-import Technology from "./section/Technology";
-import Connection from "./section/Connection";
-import Working from "./section/Working";
+import About from "./(main)/section/About";
+import Navbar from "./(main)/components/NavHeader/Navbar";
+import Technology from "./(main)/section/Technology";
+import Connection from "./(main)/section/Connection";
+import Working from "./(main)/section/Working";
+import GridContent from "./(main)/section/GridContent";
 
 // for add data lib string //
-import { HeroText } from "./components/Hero/MainHero";
-import { DeskHeroText } from "./components/Hero/MainHero";
-import { Welcome } from "./components/Authdesk/AuthText";
-import { WelcomeDesk } from "./components/Authdesk/AuthText";
+import { HeroText } from "./(main)/components/Hero/MainHero";
+import { DeskHeroText } from "./(main)/components/Hero/MainHero";
+import { Welcome } from "./(main)/components/Authdesk/AuthText";
+import { WelcomeDesk } from "./(main)/components/Authdesk/AuthText";
 
 // import Routes //
-import LinkApp from "./Routes/Link_app";
-import NavLink from "./Routes/NavLink_app";
+import LinkApp from "./(main)/Routes/Link_app";
+import NavLink from "./(main)/Routes/NavLink_app";
 
 // import CSS //
 import "./page.css";
-import "./section/style/Hero.css";
+import "./(main)/section/style/Hero.css";
 // Landing Page
 export default function Home() {
   return (
@@ -75,6 +76,10 @@ export default function Home() {
 
       <div className="how-t-work">
         <Working />
+      </div>
+
+      <div className="grid-content">
+        <GridContent />
       </div>
 
       {/* for auth Forms */}

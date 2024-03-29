@@ -1,5 +1,5 @@
 import "./globals.css";
-import FooterSection from "./section/Footer";
+import FooterSection from "./(main)/section/Footer";
 
 export const metadata = {
   title: "Whatever UIkit",
