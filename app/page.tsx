@@ -1,5 +1,5 @@
 import AuthForm from "./auth-form";
-import About from "./section/About.jsx";
+import About from "./section/About";
 import Navbar from "./components/NavHeader/Navbar";
 import Technology from "./section/Technology";
 import Connection from "./section/Connection";
@@ -23,7 +23,6 @@ export default function Home() {
   return (
     <>
       {/* start for landing */}
-
       <div className="flex justify-center items-center md:justify-center lg:justify-between xl:justify-between mt-5" data-aos="zoom-in" data-aos-delay="200">
         <div>
           <h3 className="text-2xl tracking-tight font-semibold">Whatever</h3>
