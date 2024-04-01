@@ -4,7 +4,7 @@ import Navbar from "./(main)/components/NavHeader/Navbar";
 import Technology from "./(main)/section/Technology";
 import Connection from "./(main)/section/Connection";
 import Working from "./(main)/section/Working";
-import GridContent from "./(main)/section/GridContent";
+import GridContent from "./(main)/section/Card";
 
 // for add data lib string //
 import { HeroText } from "./(main)/components/Hero/MainHero";
@@ -69,21 +69,21 @@ export default function Home() {
       </div>
 
       <section className="Technology">
-        <div className="mb-20">
-          <Technology />
-        </div>
+        <Technology />
       </section>
 
-      <div className="how-t-work">
+      <div className="how-t-work mt-20">
         <Working />
       </div>
 
-      <div className="grid-content">
-        <GridContent />
+      <div className="container -mt-56 px-6 py-16 mx-auto text-center">
+        <div className="flex justify-center mt-10">
+          <img class="object-cover w-full h-96 rounded-xl lg:w-4/5" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" />
+        </div>
       </div>
 
       {/* for auth Forms */}
-      <div className="grid md:gird lg:flex xl:flex items-center mt-10 mb-24 justify-between">
+      <div className="grid md:gird lg:flex xl:flex items-center mt-40 mb-24 justify-between">
         <div className="col-6">
           <h1 className="header text-2xl font-medium">{Welcome}</h1>
           <p className="description mt-3 Archivo text-sm leading-7">{WelcomeDesk}</p>
