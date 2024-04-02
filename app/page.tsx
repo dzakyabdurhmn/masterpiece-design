@@ -2,9 +2,10 @@ import AuthForm from "./auth-form";
 import About from "./(main)/section/About";
 import Navbar from "./(main)/components/NavHeader/Navbar";
 import Technology from "./(main)/section/Technology";
-import Connection from "./(main)/section/Connection";
 import Working from "./(main)/section/Working";
-import GridContent from "./(main)/section/Card";
+import Content from "./(main)/section/Content";
+import OtherContent from "./(main)/section/OtherContent";
+import ProfileSection from "./(main)/section/Team";
 
 // for add data lib string //
 import { HeroText } from "./(main)/components/Hero/MainHero";
@@ -20,6 +21,12 @@ import NavLink from "./(main)/Routes/NavLink_app";
 import "./page.css";
 import "./(main)/section/style/Hero.css";
 // Landing Page
+
+// hidden import
+// import Gallery from "./(main)/section/Gallery";
+// import GridContent from "./(main)/section/Card";
+// import TimeLine from "./(main)/section/TimeLIne";
+// import Connection from "./(main)/section/Connection";
 export default function Home() {
   return (
     <>
@@ -68,18 +75,28 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="Technology">
+      <div className="Technology mt-32">
         <Technology />
-      </section>
-
-      <div className="how-t-work mt-20">
-        <Working />
       </div>
 
-      <div className="container -mt-56 px-6 py-16 mx-auto text-center">
-        <div className="flex justify-center mt-10">
-          <img class="object-cover w-full h-96 rounded-xl lg:w-4/5" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" />
+      <div>
+        <div className="how-t-work mt-32">
+          <Working />
         </div>
+        <div className="container -mt-60 mx-auto">
+          <div className="timeline-section">
+            <Content />
+          </div>
+        </div>
+      </div>
+
+      <div className="content mb-32 mt-96">
+        {/* <Content /> */}
+        <OtherContent />
+      </div>
+
+      <div className="mt-[200px]">
+        <ProfileSection />
       </div>
 
       {/* for auth Forms */}
