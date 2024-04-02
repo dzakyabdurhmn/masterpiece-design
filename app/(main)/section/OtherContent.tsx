@@ -1,9 +1,29 @@
 function OtherContent() {
   return (
     <>
-      <div className="relative flex -mt-56 flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col md:px-8">
-        <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 l lg:pr-8 xl:pr-0 lg:bottom-0 lg:left-0 lg:items-center">
-          <img src="https://kitwind.io/assets/kometa/laptop.png" className="object-cover object-right w-full h-auto lg:w-auto lg:h-full" alt="" />
+      <div className="flex items-center -ml-32 justify-center">
+        <div className="flex items-center justify-center">
+          <div className="w-2/6">
+            <img className="object-cover" src="https://kitwind.io/assets/kometa/one-girl-phone.png" alt="" />
+          </div>
+          <div className="w-2/6 -ml-16 lg:-ml-32">
+            <img className="object-cover" src="https://kitwind.io/assets/kometa/two-girls-phone.png" alt="" />
+          </div>
+        </div>
+        <div className="mb-16 lg:mb-0">
+          <div className="mb-6">
+            <div>
+              <p className="mb-4 text-sm font-semibold tracking-wider uppercase rounded-full">Brand new</p>
+            </div>
+            <h2 className="text-5xl font-bold tracking-tight leading-tight text-gray-200">
+              Everything you can imagine <br /> is real
+            </h2>
+            <p className="text-gray-300 mt-7 leading-relaxed text-sm">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem at dicta cumque, ut, voluptatem nemo amet maiores <br />
+              quis aut in dolore veritatis voluptas? Quaerat nobis assumenda ad non eveniet cum veniam, quae debitis facere minima? <br />
+              Sunt aliquid quidem consequuntur illum hic adipisci numquam repellat accusantium?
+            </p>
+          </div>
         </div>
       </div>
     </>

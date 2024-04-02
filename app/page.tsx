@@ -4,13 +4,13 @@ import Navbar from "./(main)/components/NavHeader/Navbar";
 import Technology from "./(main)/section/Technology";
 import Working from "./(main)/section/Working";
 import Content from "./(main)/section/Content";
+import OtherContent from "./(main)/section/OtherContent";
 
 // for add data lib string //
 import { HeroText } from "./(main)/components/Hero/MainHero";
 import { DeskHeroText } from "./(main)/components/Hero/MainHero";
 import { Welcome } from "./(main)/components/Authdesk/AuthText";
 import { WelcomeDesk } from "./(main)/components/Authdesk/AuthText";
-
 // import Routes //
 import LinkApp from "./(main)/Routes/Link_app";
 import NavLink from "./(main)/Routes/NavLink_app";
@@ -26,7 +26,6 @@ import "./(main)/section/style/Hero.css";
 // import TimeLine from "./(main)/section/TimeLIne";
 // import Connection from "./(main)/section/Connection";
 // import ProfileSection from "./(main)/section/Team";
-// import OtherContent from "./(main)/section/OtherContent";
 export default function Home() {
   return (
     <>
@@ -75,20 +74,45 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="Technology mt-32">
+      {/* main content  hero */}
+      <div className="main-content mt-32">
         <Technology />
       </div>
 
-      <div>
+      {/* working and content */}
+      <div className="working-and-content">
         <div className="how-t-work mt-20">
           <Working />
         </div>
         <div className="container mt-40 mx-auto">
-          <div>
-            <Content />
+          <Content />
+        </div>
+      </div>
+
+      {/* team section */}
+      <div className="team-section">
+        <div className="flex items-center">
+          <div className="profile-1">
+            <img src="" alt="" />
+            <ul></ul>
+          </div>
+          <div className="profile-2">
+            <img src="" alt="" />
+            <ul></ul>
+          </div>
+          <div className="profile-3">
+            <img src="" alt="" />
+            <ul></ul>
           </div>
         </div>
       </div>
+
+      {/* other content mobile asset */}
+      <div className="mt-20">
+        <OtherContent />
+      </div>
+
+      {/* for gallery */}
 
       {/* for auth Forms */}
       <div className="grid md:gird lg:flex xl:flex items-center mt-40 mb-24 justify-between">
