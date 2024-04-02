@@ -1,10 +1,10 @@
 "use client";
 import type { NextPage } from "next";
 import { ChangeEvent } from "react";
-
-// import supabase from "../utils/supabase";
-
 import { createClient } from "@supabase/supabase-js";
+import { PrismaClient } from "@prisma/client";
+import { login } from "./submit";
+const prisma = new PrismaClient();
 
 const Home: NextPage = () => {
   const supabase = createClient(
@@ -21,12 +21,13 @@ const Home: NextPage = () => {
 
     const { data, error } = await supabase.storage
       .from("design_image")
-      .upload("public/" + file?.name, file as File);
+      .upload("" + file?.name, file as File);
 
     if (data) {
-      console.log(data);
+      console.log(data.path);
     } else if (error) {
-      console.log(error);
+      console.log(error.message);
+      alert("jeneng e wes ono");
     }
   };
 
@@ -34,13 +35,12 @@ const Home: NextPage = () => {
 
   return (
     <div className="px-5 py-5 ">
-        
       <input
         type="file"
-        accept="image/*"
         id="file_input"
+        disabled
         onChange={(e) => {
-          handleUpload(e); // 👈 this will trigger when user selects the file.
+          handleUpload(e);
         }}
       />
     </div>

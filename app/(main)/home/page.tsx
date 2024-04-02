@@ -1,11 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
-import { Database } from "../database.types";
 import { cookies } from "next/headers";
-import Uufile from "./uploadfile";
 const prisma = new PrismaClient();
 
-const supabase = createServerComponentClient<Database>({ cookies });
+const supabase = createServerComponentClient({ cookies });
 
 export default async function Page() {
   const designs = await prisma.design.findMany();
@@ -13,16 +11,21 @@ export default async function Page() {
   return (
     <div className="flex flex-col">
       {/* @ts-ignore */}
-      <Uufile key={""} />
-      <div>
+      <div className="flex space-x-4">
         {designs.map((design, index) => (
           <a
             href={design.slug}
-            className="bg-red-500 flex flex-col"
+            className="bg-red-500 flex flex-col border-2 "
             key={index + 1}
           >
-            {/* <img src={design.image_url || ""} alt={design.name as string} /> */}
+            <img
+              width="100"
+              height="100"
+              src={design.image_url || ""}
+              alt={design.name as string}
+            />
             <h1 className="flex flex-col">{design.name}</h1>
+            <p className="flex flex-col">{design.design_url}</p>
           </a> // Render content for each design
         ))}
       </div>
