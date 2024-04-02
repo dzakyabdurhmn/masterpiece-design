@@ -4,8 +4,6 @@ import Navbar from "./(main)/components/NavHeader/Navbar";
 import Technology from "./(main)/section/Technology";
 import Working from "./(main)/section/Working";
 import Content from "./(main)/section/Content";
-import OtherContent from "./(main)/section/OtherContent";
-import ProfileSection from "./(main)/section/Team";
 
 // for add data lib string //
 import { HeroText } from "./(main)/components/Hero/MainHero";
@@ -27,6 +25,8 @@ import "./(main)/section/style/Hero.css";
 // import GridContent from "./(main)/section/Card";
 // import TimeLine from "./(main)/section/TimeLIne";
 // import Connection from "./(main)/section/Connection";
+// import ProfileSection from "./(main)/section/Team";
+// import OtherContent from "./(main)/section/OtherContent";
 export default function Home() {
   return (
     <>
@@ -80,23 +80,14 @@ export default function Home() {
       </div>
 
       <div>
-        <div className="how-t-work mt-32">
+        <div className="how-t-work mt-20">
           <Working />
         </div>
-        <div className="container -mt-60 mx-auto">
-          <div className="timeline-section">
+        <div className="container mt-40 mx-auto">
+          <div>
             <Content />
           </div>
         </div>
-      </div>
-
-      <div className="content mb-32 mt-96">
-        {/* <Content /> */}
-        <OtherContent />
-      </div>
-
-      <div className="mt-[200px]">
-        <ProfileSection />
       </div>
 
       {/* for auth Forms */}

@@ -1,8 +1,8 @@
 function Working() {
   return (
     <>
-      <div className="bg-[#121212] h-[1000px] rounded-3xl">
-        <div className="px-4 p-30 max-w-7xl pb-60 pt-20 mx-auto rounded-2xl sm:px-6 lg:px-8">
+      <div>
+        <div className="px-4 max-w-7xl mx-auto rounded-2xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-semibold text-gray-200 leading-tight sm:text-4xl lg:text-4xl">How does it work?</h2>
             <p className="max-w-lg mx-auto mt-4 leading-8 text-gray-300">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
