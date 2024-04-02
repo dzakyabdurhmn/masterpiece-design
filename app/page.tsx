@@ -20,12 +20,6 @@ import "./page.css";
 import "./(main)/section/style/Hero.css";
 // Landing Page
 
-// hidden import
-// import Gallery from "./(main)/section/Gallery";
-// import GridContent from "./(main)/section/Card";
-// import TimeLine from "./(main)/section/TimeLIne";
-// import Connection from "./(main)/section/Connection";
-// import ProfileSection from "./(main)/section/Team";
 export default function Home() {
   return (
     <>
@@ -111,8 +105,6 @@ export default function Home() {
       <div className="mt-20">
         <OtherContent />
       </div>
-
-      {/* for gallery */}
 
       {/* for auth Forms */}
       <div className="grid md:gird lg:flex xl:flex items-center mt-40 mb-24 justify-between">
