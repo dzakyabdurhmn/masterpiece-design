@@ -3,10 +3,10 @@ function OtherContent() {
     <>
       <div className="flex items-center -ml-32 justify-center">
         <div className="flex items-center justify-center">
-          <div className="w-2/6">
+          <div className="w-3/6">
             <img className="object-cover" src="https://kitwind.io/assets/kometa/one-girl-phone.png" alt="" />
           </div>
-          <div className="w-2/6 -ml-16 lg:-ml-32">
+          <div className="w-3/6 -ml-16 lg:-ml-32">
             <img className="object-cover" src="https://kitwind.io/assets/kometa/two-girls-phone.png" alt="" />
           </div>
         </div>
@@ -18,10 +18,9 @@ function OtherContent() {
             <h2 className="text-5xl font-bold tracking-tight leading-tight text-gray-200">
               Everything you can imagine <br /> is real
             </h2>
-            <p className="text-gray-300 mt-7 leading-relaxed text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem at dicta cumque, ut, voluptatem nemo amet maiores <br />
-              quis aut in dolore veritatis voluptas? Quaerat nobis assumenda ad non eveniet cum veniam, quae debitis facere minima? <br />
-              Sunt aliquid quidem consequuntur illum hic adipisci numquam repellat accusantium?
+            <p className="text-gray-300 mt-7 leading-relaxed col-7">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem at dicta cumque, ut, voluptatem nemo amet maiores
+              quis aut in dolore veritatis voluptas? Quaerat nobis assumenda ad non eveniet cum veniam, quae debitis facere minima? 
             </p>
           </div>
         </div>

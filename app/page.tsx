@@ -1,10 +1,6 @@
 import AuthForm from "./auth-form";
-import About from "./(main)/section/About";
 import Navbar from "./(main)/components/NavHeader/Navbar";
-import Technology from "./(main)/section/Technology";
-import Working from "./(main)/section/Working";
 import Content from "./(main)/section/Content";
-import OtherContent from "./(main)/section/OtherContent";
 
 // for add data lib string //
 import { HeroText } from "./(main)/components/Hero/MainHero";
@@ -38,7 +34,7 @@ export default function Home() {
         <div className="items-start">
           <div className="text-center ">
             <div className="text-gray-200 text-5xl md:text-5xl xl:text-8xl Archivo font-semibold">{HeroText}</div>
-            <p className=" mt-4 col-7 hidden lg:block xl:block text-sm xl:text-base Archivo mx-auto text-gray-300 xl:leading-8">{DeskHeroText}</p>
+            <p className=" mt-4 col-7 hidden lg:block xl:block text-sm xl:text-base Archivo mx-auto text-gray-300 xl:leading-relaxed">{DeskHeroText}</p>
             <a href="#authForm">
               <button className="py-2 Archivo w-[250px] rounded-lg text-center font-medium mt-6 bg-[#3fcf8e] hover:bg-[#34b27b] hover:scale-95 duration-100">Get Design</button>
             </a>
@@ -63,22 +59,11 @@ export default function Home() {
         <div className="flex justify-center">
           <h3 className="py-2 w-40 text-center bg-[#101010] Archivo text-gray-200 text-xl font-semibold rounded-xl">About</h3>
         </div>
-        <div className="mt-20">
-          <About />
-        </div>
       </div>
 
-      {/* main content  hero */}
-      <div className="main-content mt-32">
-        <Technology />
-      </div>
-
-      {/* working and content */}
-      <div className="working-and-content">
-        <div className="how-t-work mt-20">
-          <Working />
-        </div>
-        <div className="container mt-40 mx-auto">
+      {/*  content */}
+      <div className="content">
+        <div className="container mt-20 mx-auto">
           <Content />
         </div>
       </div>
@@ -94,16 +79,21 @@ export default function Home() {
             <img src="" alt="" />
             <ul></ul>
           </div>
+        </div>
+        <div className="flex items-center">
+          <div className="profile-1">
+            <img src="" alt="" />
+            <ul></ul>
+          </div>
+          <div className="profile-2">
+            <img src="" alt="" />
+            <ul></ul>
+          </div>
           <div className="profile-3">
             <img src="" alt="" />
             <ul></ul>
           </div>
         </div>
-      </div>
-
-      {/* other content mobile asset */}
-      <div className="mt-20">
-        <OtherContent />
       </div>
 
       {/* for auth Forms */}
