@@ -63,36 +63,8 @@ export default function Home() {
 
       {/*  content */}
       <div className="content">
-        <div className="container mt-20 mx-auto">
+        <div className="container mt-14 mx-auto">
           <Content />
-        </div>
-      </div>
-
-      {/* team section */}
-      <div className="team-section">
-        <div className="flex items-center">
-          <div className="profile-1">
-            <img src="" alt="" />
-            <ul></ul>
-          </div>
-          <div className="profile-2">
-            <img src="" alt="" />
-            <ul></ul>
-          </div>
-        </div>
-        <div className="flex items-center">
-          <div className="profile-1">
-            <img src="" alt="" />
-            <ul></ul>
-          </div>
-          <div className="profile-2">
-            <img src="" alt="" />
-            <ul></ul>
-          </div>
-          <div className="profile-3">
-            <img src="" alt="" />
-            <ul></ul>
-          </div>
         </div>
       </div>
 
